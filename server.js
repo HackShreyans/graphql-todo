@@ -4,7 +4,7 @@ require("dotenv").config();
 require("./db/conn");
 const cors = require('cors')
 app.use(express.json())
-app.use(cors())
+app.use(cors());
 
 const Router = require("./Routes/todoRoute");
 const PORT = process.env.PORT
